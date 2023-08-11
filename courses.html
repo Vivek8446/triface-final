@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      flex-wrap: wrap;
+      /* Initially, three columns */
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+      column-gap: 20px;
+      justify-content: center;
+      justify-items: center;
+      /* Gap between items */
+    }
+
+    .item {
+      background-color: #ddd;
+      
+      /* margin: 20px; */
+      max-width: 350px;
+      border-radius: 5px;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 908px) {
+
+      /* Mobile view: switch to a single column */
+      .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 2fr;
+        
+      }
+    }
+    .card-contents{
+      display:grid;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+    }
+    .feature-img{
+    width: 100%;
+  }
+  button{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 2px;
+    background: rgb(53, 150, 255);
+    border: none;
+    border-image: initial;
+    margin: 15px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255,1);
+   /*background-color: #1c9ffc; */
+   
+ }
+ .navbar-dark .navbar-brand{
+      color: rgb(255, 255, 255,1);
+    /* background-color: #1c9ffc;  */
+    
+  }
+
+  .navbar {
+    /* padding: 0 0 4.5rem; */
+    padding: 25px;
+    /* background-color: #fff; */
+    
+    background-color: #0094fe;
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  
+  .container-fluid{
+  /* padding: 7% 15%; */
+  padding: 10px;
+  background-color: #0094fe;
+  
+}
+.headline{
+    color: #fff;
+    padding: 50px 50px;
+    background-color: #0094fe;
+    margin-bottom: 10px;
+ }
+ .item:hover{
+      box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+    }
+  #footer{
+ margin-top: 10px;
+  }
+  </style>
+</head>
+
+<body>
+
+  
+
+  <!-- nav -->
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="index.html">TriFace Training Services</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+  </section>
+
+
+
+
+  <section>
+    <div class="headline">
+        <h2 >Our courses</h2>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="item">
+      <div class="feature-card">
+        
+
+          <img class="feature-img" src="\images\Artificial-Intelligence-5.jpg" alt="Image 1">
+        
+        <div class="card-contents">
+          <h3>Azure Devops</h3>
+          <p>Description for Card 1</p>
+          <a href="syllabus1.html"><button>Know More</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="feature-card">
+        <img class="feature-img" src="\images\Artificial-Intelligence-5.jpg" alt="Image 1">
+        <div class="card-contents">
+          <h3>Azure Cloud Native using <br> Kubernetes Services</h3>
+          <p>Description for Card 1</p>
+          <a href="syllabus1.html"><button>Know More</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="feature-card">
+        <img class="feature-img" src="\images\Artificial-Intelligence-5.jpg" alt="Image 1">
+        <div class="card-contents">
+          <h3>Azure Integration Services</h3>
+          <p>Description for Card 1</p>
+          <a href="syllabus1.html"><button>Know More</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="feature-card">
+        <img class="feature-img" src="\images\Artificial-Intelligence-5.jpg" alt="Image 1">
+        <div class="card-contents">
+          <h3>Azure Fundamentals</h3>
+          <p>Description for Card 1</p>
+          <a href="syllabus1.html"><button>Know More</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="feature-card">
+        <img class="feature-img" src="\images\Artificial-Intelligence-5.jpg" alt="Image 1">
+        <div class="card-contents">
+          <h3>.Net Core and Web Api</h3>
+          <p>Description for Card 1</p>
+          <a href="syllabus1.html"><button>Know More</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="feature-card">
+        <img class="feature-img" src="\images\Artificial-Intelligence-5.jpg" alt="Image 1">
+        <div class="card-contents">
+          <h3>Azure Data Engineering</h3>
+          <p>Description for Card 1</p>
+          <a href="syllabus1.html"><button>Know More</button></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+<footer class="white-section" id="footer">
+  <div class="container-fluid">
+
+    <p class="foot">© Copyright 2023 TriFace</p>
+
+  </div>
+</footer>
+
+
+
+
+</body>
+
+</html>
